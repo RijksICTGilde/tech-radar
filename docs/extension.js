@@ -4,7 +4,7 @@ function getPathPrefix() {
   let pathPrefix = "../";
   let urlPaths = location.pathname.split('/');
   if (urlPaths.length >= 1 && urlPaths[1] === "tech-radar") {
-    pathPrefix = "/tech-radar/"
+    pathPrefix = "/tech-radar"
   }
   return pathPrefix;
 }
