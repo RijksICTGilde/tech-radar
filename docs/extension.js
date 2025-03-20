@@ -14,7 +14,7 @@ function getTechnologies() {
 
   let pathPrefix = getPathPrefix();
 
-  fetch(pathPrefix + "technologies.txt")
+  fetch(pathPrefix + "/technologies.txt")
     .then(response => response.text())
     .then(data => {
       var promises = [];
