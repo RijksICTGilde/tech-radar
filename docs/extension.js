@@ -3,8 +3,8 @@ var entries = [];
 function getPathPrefix() {
   let pathPrefix = "../";
   let urlPaths = location.pathname.split('/');
-  if (urlPaths.length >= 1 && urlPaths[1] === "rig-techradar") {
-    pathPrefix = "/rig-techradar/"
+  if (urlPaths.length >= 1 && urlPaths[1] === "tech-radar") {
+    pathPrefix = "/tech-radar/"
   }
   return pathPrefix;
 }
