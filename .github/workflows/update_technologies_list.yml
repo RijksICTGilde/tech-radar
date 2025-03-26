@@ -1,4 +1,4 @@
-name: Update-Technologies-List
+name: Update Technologies List
 
 on:
   pull_request:

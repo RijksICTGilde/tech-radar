@@ -3,11 +3,9 @@ name: Deploy static content to Pages
 on:
   workflow_run:
     workflows:
-      - Update-Technologies-List
+      - Update Technologies List
     types:
       - completed
-    branches:
-      - master
   push:
     branches: ["master"]
   # Allows you to run this workflow manually from the Actions tab
