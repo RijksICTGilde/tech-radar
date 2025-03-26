@@ -82,7 +82,7 @@ jobs:
             core.setOutput('quadrant', quadrant);
             core.setOutput('ring', ring);
             core.setOutput('active', 'true');
-            core.setOutput('moved', moved);
+            core.setOutput('moved', 1);
             core.setOutput('label', label);
             core.setOutput('description', cleanDescription);
 
