@@ -2,7 +2,8 @@ name: Deploy static content to Pages
 
 on:
   workflow_run:
-    workflows: ["Update Technologies List"]
+    workflows:
+      - Update-Technologies-List
     types:
       - completed
     branches:
