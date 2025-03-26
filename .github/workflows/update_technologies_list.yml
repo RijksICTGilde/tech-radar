@@ -21,19 +21,19 @@ jobs:
 
       - name: Generate technologies list
         run: |
-          ls -1 docs/technologies/ | sort > technologies.txt
+          ls -1 docs/technologies/ | sort > docs/technologies.txt
 
       - name: Commit changes if needed
         run: |
-          if git diff --exit-code technologies.txt; then
-            echo "No changes to technologies.txt, skipping commit"
+          if git diff --exit-code docs/technologies.txt; then
+            echo "No changes to docs/technologies.txt, skipping commit"
             exit 0
           fi
           
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           
-          git add technologies.txt
-          git commit -m "Update technologies.txt [skip ci]" -m "Automated update of technologies list"
+          git add docs/technologies.txt
+          git commit -m "Update docs/technologies.txt [skip ci]" -m "Automated update of technologies list"
           
           git push origin ${{ github.event.repository.default_branch }}
