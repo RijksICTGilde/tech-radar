@@ -1,0 +1,68 @@
+name: New Technology Request
+description: Request to add documentation for a new technology
+title: "Add technology ..."
+
+labels: ["documentation", "new-technology"]
+body:
+  - type: input
+    id: technology_name
+    attributes:
+      label: Technology Name
+      description: Name of the technology to add (this will be used for the label field)
+      placeholder: Python
+    validations:
+      required: true
+  - type: dropdown
+    id: quadrant
+    attributes:
+      label: Quadrant
+      description: Select the appropriate quadrant
+      options:
+        - "0 - Languages"
+        - "1 - Infrastructure"
+        - "2 - Datastores"
+        - "3 - Data Management"
+    validations:
+      required: true
+  - type: dropdown
+    id: ring
+    attributes:
+      label: Ring
+      description: Select the appropriate ring
+      options:
+        - "0 - Adopt"
+        - "1 - Trial"
+        - "2 - Assess"
+        - "3 - Hold"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: moved
+    attributes:
+      label: Movement Direction
+      description: Direction technology has moved (-1, 0, 1)a
+      options:
+        - "-1"
+        - "0"
+        - "1"
+    validations:
+      required: true
+  # Make the description more prominent
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A comprehensive description of the technology (this will appear in the summary)
+      placeholder: "Python is a beginner-friendly, general-purpose programming language known for its clear and concise syntax..."
+      render: markdown
+    validations:
+      required: true
+
+  # Add a horizontal line before metadata section
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Metadata
+        Please select the appropriate metadata values for this technology.
