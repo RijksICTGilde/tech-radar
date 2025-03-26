@@ -1,5 +1,6 @@
 DitisRobbert11.md
 DitisRobbert9.md
+Lala.md
 docker-image.md
 java.md
 kubernetes.md
