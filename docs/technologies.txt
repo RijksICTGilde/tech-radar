@@ -1,5 +1,6 @@
 GreenCodeInitiative.md
 NLDS.md
+Vaadin.md
 docker-image.md
 htmx.md
 java.md
