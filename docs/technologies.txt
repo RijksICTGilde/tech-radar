@@ -4,6 +4,7 @@ Kotlin.md
 Micronaut.md
 NLDS.md
 Quarkus.md
+SpringBoot.md
 Vaadin.md
 docker-image.md
 htmx.md
