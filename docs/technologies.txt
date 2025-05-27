@@ -3,11 +3,11 @@ docker-image.md
 htmx.md
 java.md
 kubernetes.md
+pdm.md
 poetry.md
 precommit.md
 python.md
 ruff.md
+streamlit.md
 ty.md
 uv.md
-pdm.md
-streamlit.md
